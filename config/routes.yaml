@@ -3,3 +3,7 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+lucky_greetting:
+    path: /lucky/greetting/{name?}
+    controller: App\Controller\LuckyController::gretting
