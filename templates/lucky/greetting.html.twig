@@ -1,5 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+{% endblock %}
+
+
+{% block body %}
 {% if name %}
-<h1>Hello, {{ name|upper }}! You're lucky!</h1>
+<h1 class="lucky">Hello, {{ name|upper }}! You're lucky!</h1>
 {% else %}
 <h1>Hello!</h1>
 {% endif %}
+{% endblock %}
